@@ -15,6 +15,9 @@ body{
     color: hsl(237, 12%, 33%);
 
 }
+h2{
+    font-size: 1.7rem;
+}
 .container{
     width:92%;
     margin:10em auto;
@@ -58,12 +61,16 @@ body{
 .title{
     font-weight: 700;
     text-align: center;
-    font-size:1.5rem;
-    margin-bottom: 1em;
+    margin-bottom: 0.8em;
+}
+.question:hover{
+    color:hsl(14, 88%, 65%);
+    cursor: pointer;
 }
 
 .arrow-icon{
     transform: rotate(180deg);
+    width:4%;
 }
 .arrow-icon:hover{
     cursor: pointer;
@@ -90,6 +97,9 @@ body{
     .img-card{
         background-size: 30rem auto;
     }
+    .arrow-icon{
+        width:3%;
+    }
     
 }
 @media(min-width:1000px)
@@ -106,38 +116,48 @@ body{
 {
    body{
        font-size:0.9rem;
-       position: relative;
    }
+ 
     .container{
-        width:65%;
-        padding: 4em ;
+        width:70%;
+        padding:0;
         margin:9em auto;
     }
+    .row{
+        display: flex;
+        justify-content: space-between;
+    }
     .img-card{
-        width:40%;
-        top:1rem;
-        left:6rem;
-        bottom: 9rem;
+        width:47%;
+        position: relative;
+        padding: 0;
+        top:0;
         background-image: url("images/bg-pattern-desktop.svg");
         background-repeat: no-repeat;
+        background-size: 30rem ;
     }
     .img-mob{
         display: none;
     }
     .img-desk{
-        width:90%;
+        width:120%;
         display:block;
-        margin: 4em auto;
+        position: absolute;
+        top:4rem;
+        left: -5rem;
     }
     .img-online{
         display: unset;
         position: absolute;
-        top:10rem;
+        top:15rem;
+        left: -3rem;
     }
     .content-card{
-        padding-top: 0;
-        float: right;
-        width:50%;
+        padding:3.5em 0 4.5em 0;
+        width:45%;
+    }
+    .Q-A-content{
+        width:80%;
     }
     .title{
         text-align: unset;
